@@ -1,22 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import {
+  Text,
+  Heading,
+  Image,
+  Link,
+  OrderedList,
+  ListItem,
+  HStack,
+  Box,
+  Input,
+  Button,
+  Textarea,
+} from "@chakra-ui/react";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Heading>Super Startup Coach</Heading>
+        <Text>Input a challenge you are facing in your startup</Text>
+        <Textarea
+          resize="none"
+          borderRadius="8px"
+          w={["90%", "70%", "50%"]}
+          h={"200px"}
+          fontSize="20px"
+          padding="8px"
+        />
       </header>
     </div>
   );
